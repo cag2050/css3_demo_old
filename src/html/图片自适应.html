@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .img_container {
+            background-color: red;
+            border: 1px solid red;
+        }
+
+        .img1 {
+            /*width: 100%;*/
+            /* 相对于父级容器宽度，会占满父级容器*/
+            max-width: 100%;
+            /* 相对于img自身的尺寸，初始是图片原始尺寸*/
+        }
+    </style>
+</head>
+<body>
+<div class="img_container">
+    <img class="img1" src="../images/liying.jpg">
+    <!--<img class="img1" src="../images/liying.jpg">-->
+</div>
+<div class="img_container">
+    <img class="img1" src="../images/liying2.jpg">
+    <!--<img class="img1" src="../images/liying2.jpg">-->
+</div>
+
+</body>
+</html>
