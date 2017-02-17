@@ -2,8 +2,19 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>perspective搭配transform: translateZ实现</title>
     <style>
+        @keyframes animate1 {
+            0% {
+                transform: translateZ(-1000px);
+                -webkit-transform: translateZ(-1000px);
+            }
+            100% {
+                transform: translateZ(0px);
+                -webkit-transform: translateZ(0px);
+            }
+        }
+
         #div1 {
             position: relative;
             height: 150px;
@@ -20,8 +31,10 @@
             position: absolute;
             border: 1px solid black;
             background-color: yellow;
-            transform: rotateX(45deg);
-            -webkit-transform: rotateX(45deg); /* Safari and Chrome */
+            animation: animate1 1s infinite;
+            -webkit-animation: animate1 1s infinite;
+            /*animation: animate1 1s;*/
+            /*-webkit-animation: animate1 1s;*/
         }
     </style>
 </head>

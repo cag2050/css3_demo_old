@@ -15,7 +15,7 @@ gulp.task("browser-sync", function () {
         ghostMode: {clicks: true, scroll: true},
         logPrefix: "learning browser-sync in gulp",
         // browser: ["chrome", "firefox", "iexplore"], // 打开3个浏览器
-        browser: ["chrome"],
+        //browser: ["chrome"],
         // open: false,
         port: 3000
     })
