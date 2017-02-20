@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .parent {
+            font-size: 0;
+            /* 父元素设置font-size,去掉子元素之间的空隙*/
+        }
+
+        .child {
+            width: 50px;
+            height: 30px;
+            border: 1px solid red;
+            display: inline-block;
+            font-size: 16px;
+            /* 子元素必须设置font-size, 否则继承font-size : 0;*/
+        }
+
+        .child2 {
+            width: 50px;
+            height: 30px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+
+        .child3 {
+            width: 50px;
+            height: 30px;
+            border: 1px solid red;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+display: inline-block实现，同时，父元素设置font-size:0
+<div class="parent">
+    <div class="child">div1</div>
+    <div class="child">div2</div>
+    <div class="child">div3</div>
+</div>
+只设置display: inline-block，中间会存在空白间隙
+<div>
+    <div class="child2">div1</div>
+    <div class="child2">div2</div>
+    <div class="child2">div3</div>
+</div>
+float:left实现<br>
+
+<div class="child3">div1</div>
+<div class="child3">div2</div>
+<div class="child3">div3</div>
+</body>
+</html>

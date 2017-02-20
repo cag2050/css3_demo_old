@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>flex的justify-content分别为space-around、space-between时</title>
+    <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .flex1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div1 {
+            display: flex;
+            /*flex: 1;*/
+            width: 180px;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            border: 1px solid white;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+justify-content: space-around;
+<div class="flex1">
+    <div class="div1">弹性盒子demo 1</div>
+    <div class="div1">弹性盒子demo 2</div>
+    <div class="div1">弹性盒子demo 3</div>
+</div>
+justify-content: space-between;
+<div class="flex2">
+    <div class="div1">弹性盒子demo 1</div>
+    <div class="div1">弹性盒子demo 2</div>
+    <div class="div1">弹性盒子demo 3</div>
+</div>
+</body>
+</html>
