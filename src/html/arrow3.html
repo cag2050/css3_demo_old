@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .arrow {
+            width: 25%;
+            height: 50px;
+            line-height: 50px;
+            background-color: #FFD600;
+        }
+
+        .arrow:before {
+            content: '';
+            border: 25px solid transparent;
+            border-left-color: white;
+            background-color: #FFD600;
+            float: left;
+        }
+        .arrow:after {
+            content: '';
+            border: 25px solid transparent;
+            border-left-color: #FFD600;
+            background-color: white;
+            float: left;
+            left: 84%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="arrow">1、选择账号类型</div>
+</body>
+</html>
