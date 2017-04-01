@@ -1,5 +1,5 @@
 {
-  "name": "css3_demo",
+  "name": "css3_demo_old",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cag2050/css3_demo.git"
+    "url": "git+https://github.com/cag2050/css3_demo_old.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cag2050/css3_demo/issues"
+    "url": "https://github.com/cag2050/css3_demo_old/issues"
   },
-  "homepage": "https://github.com/cag2050/css3_demo#readme",
+  "homepage": "https://github.com/cag2050/css3_demo_old#readme",
   "dependencies": {
     "browser-sync": "^2.18.7",
     "gulp": "^3.9.1"
